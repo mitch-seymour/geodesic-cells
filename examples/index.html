@@ -1,84 +1,111 @@
+<!doctype html>
 <html>
     <head>
         <title>Geodesic cells</title>
 
     </head>
-	<body>
-        
+    <body>
+
         <style>
-            
+            path {
+                fill: none;
+                stroke: rgba(139, 188, 253, .4);
+            }
+
+            .satellite-circle {
+                fill: #50D3C1;
+                fill-opacity: .88;
+                stroke: #50D3C1;
+                stroke-width: 2px;
+            }
+
+            .satellite-symbol {
+                fill: #fff;
+                fill-opacity: 1;
+                stroke: #50D3C1;
+                stroke-width: 2px;
+            }
+
+            .satellite-connector {
+                stroke: #50D3C1;
+                stroke-width: 2px;
+            }
+
+            .satellite-path {
+                stroke: #50D3C1;
+                stroke-opacity: .5;
+            }
+
             .arc-background {
-              fill: #A8C3CE;
+                fill: #A8C3CE;
             }
-            
+
             .dc circle {
-              fill: rgba(255,255,255,.7);
-              stroke: rgb(125,181,252);
-              stroke-width:2px;
+                fill: rgba(255, 255, 255, .7);
+                stroke: rgb(125, 181, 252);
+                stroke-width: 2px;
             }
-            
+
             .dc.active circle {
-              fill: rgba(255,255,255,.98);
-              stroke: #02425F;
-              stroke-width:3px;
+                fill: rgba(255, 255, 255, .98);
+                stroke: #02425F;
+                stroke-width: 3px;
             }
-            
+
             .dc text {
-                fill:rgb(125,181,252);
-                font-family:Helvetica;
-                font-size:12px;
+                fill: rgb(125, 181, 252);
+                font-family: Helvetica;
+                font-size: 12px;
             }
-            
+
             .dc.active text {
                 fill: #02425F;
             }
-            
+
             .arc-foreground {
-              fill: #fff;
+                fill: #fff;
             }
-            
+
             .arc-text {
                 fill: #fff;
-                font-family:Helvetica;
+                font-family: Helvetica;
             }
-            
+
             .arc-text.bottom {
                 fill: #ccc;
                 font-style: italic;
-                font-size:11px;
+                font-size: 11px;
             }
-            
-            path {
-              fill: none;
-              stroke: rgba(139,188,253, .4);
-            }
-            
+
             circle.outer {
                 fill: none;
-                stroke: rgba(139,188,253, .6);
+                stroke: rgba(139, 188, 253, .6);
                 stroke-width: 1px;
             }
-            
+
             circle.middle {
-                fill: rgba(139,188,253, .6);
-                stroke: rgba(139,188,253, .8);
+                fill: rgba(139, 188, 253, .6);
+                stroke: rgba(139, 188, 253, .8);
                 stroke-width: 2px;
             }
-            
+
             circle.inner {
-                fill: rgba(124,168,246, .8);
-                stroke: rgba(124,168,246, .85);
+                fill: rgba(124, 168, 246, .8);
+                stroke: rgba(124, 168, 246, .85);
                 stroke-width: 2px;
             }
-            
+
             circle.inner-most {
-                fill: rgb(24,95,125);
+                fill: rgb(24, 95, 125);
             }
+
         </style>
-	
-		<!-- scripts -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js"></script>
+
+        <!-- scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js"></script>
         <script src="../src/geodesic.min.js"></script>
         <script src="../src/geodesic-cells.js"></script>
-	</body>
+        
+    </body>
+
 </html>
