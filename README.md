@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/mitch-seymour/geodesic-cells.png?label=ready&title=Ready)](https://waffle.io/mitch-seymour/geodesic-cells)
 # Geodesic Cells
 
 <img src="http://i.imgur.com/RCovntS.png" height="360">
